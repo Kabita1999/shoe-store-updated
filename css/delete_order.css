@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.delete-order-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.delete-order-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #dc3545;
+}
+
+.delete-order-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.delete-order-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.delete-order-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.delete-order-actions .confirm {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.delete-order-actions .confirm:hover {
+    background-color: #a71d2a;
+}
+
+.delete-order-actions .cancel {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.delete-order-actions .cancel:hover {
+    background-color: #5a6268;
+}

@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Page heading */
+h1.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #007bff;
+}
+
+/* Form styling */
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+form .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form .form-control.is-invalid {
+    border-color: #e74c3c;
+}
+
+form .invalid-feedback {
+    color: #e74c3c;
+    font-size: 0.9rem;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact card styling */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    padding: 20px;
+}
+
+.card h3.h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.card i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+/* Responsive layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col-md-7, .col-md-5 {
+    flex: 1 1 calc(58.333% - 1rem);
+    max-width: calc(58.333% - 1rem);
+}
+
+.col-md-5 {
+    flex: 1 1 calc(41.667% - 1rem);
+    max-width: calc(41.667% - 1rem);
+}
+
+@media (max-width: 768px) {
+    .col-md-7, .col-md-5 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Footer spacing */
+h4.h5 {
+    margin-top: 2rem;
+    color: #2c3e50;
+}
+
+.d-flex.gap-3 a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.d-flex.gap-3 a:hover {
+    color: #007bff;
+}

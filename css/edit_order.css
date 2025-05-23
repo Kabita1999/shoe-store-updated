@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.edit-order-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.edit-order-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}
+
+.edit-order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-order-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-order-form input, .edit-order-form select, .edit-order-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.edit-order-form input:focus, .edit-order-form select:focus, .edit-order-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.edit-order-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.edit-order-form button:hover {
+    background-color: #0056b3;
+}

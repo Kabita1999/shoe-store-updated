@@ -1,0 +1,208 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cart container */
+.cart-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+/* Page heading */
+.cart-container h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Empty cart message */
+.empty-cart {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+}
+.empty-cart a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.empty-cart a:hover {
+    text-decoration: underline;
+}
+
+/* Cart table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+.cart-table th, .cart-table td {
+    padding: 15px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.cart-table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #333;
+}
+.cart-table td img {
+    width: 70px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.cart-table .product-name {
+    font-weight: bold;
+}
+.cart-table .price {
+    color: #007bff;
+    font-weight: bold;
+}
+.cart-table .remove-btn {
+    color: #e74c3c;
+    font-size: 0.95rem;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background: #fceaea;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+.cart-table .remove-btn:hover {
+    background-color: #f8d7da;
+}
+
+/* Totals */
+.cart-totals {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.cart-totals .total-value {
+    font-size: 1.6rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Buttons */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 10px;
+}
+.cart-actions .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.cart-actions .btn:hover {
+    background-color: #0056b3;
+}
+.cart-actions .btn.clear-cart {
+    background-color: #e74c3c;
+}
+.cart-actions .btn.clear-cart:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cart-table th, .cart-table td {
+        padding: 10px 6px;
+        font-size: 0.95rem;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cart-actions .btn {
+        width: 100%;
+    }
+
+    .cart-table td img {
+        width: 50px;
+    }
+}
+/* Make all table cells align content in center */
+.cart-table td, .cart-table th {
+    vertical-align: middle;
+}
+
+/* Fix image dimensions consistently */
+.cart-table td img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Set consistent width for each column */
+.cart-table th:nth-child(1), .cart-table td:nth-child(1) {
+    width: 80px;
+    text-align: center;
+}
+.cart-table th:nth-child(2), .cart-table td:nth-child(2) {
+    width: 25%;
+}
+.cart-table th:nth-child(3),
+.cart-table th:nth-child(4),
+.cart-table th:nth-child(5),
+.cart-table th:nth-child(6),
+.cart-table td:nth-child(3),
+.cart-table td:nth-child(4),
+.cart-table td:nth-child(5),
+.cart-table td:nth-child(6) {
+    width: 12%;
+    text-align: center;
+}
+
+/* Center price, quantity, total text */
+.cart-table td.price,
+.cart-table td.quantity,
+.cart-table td.total,
+.cart-table td .remove-btn {
+    text-align: center;
+}
+
+/* Make all rows minimum consistent height */
+.cart-table tr {
+    min-height: 80px;
+}
+
+/* Adjust table on mobile for better stacking */
+@media (max-width: 768px) {
+    .cart-table th, .cart-table td {
+        padding: 10px 6px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .cart-table td img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
